@@ -1,0 +1,40 @@
+---
+// src/components/Contacto.astro
+---
+
+<section id="contacto" class="px-6 py-32 max-w-7xl mx-auto">
+  <div class="bg-[#0a0a0a] border border-white/5 rounded-[3.5rem] p-12 md:p-24 relative overflow-hidden text-center">
+    
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-purple-600/10 blur-[120px]"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-600/10 blur-[120px]"></div>
+
+    <div class="relative z-10">
+      <span class="text-purple-500 font-bold tracking-[0.4em] text-[10px] uppercase mb-6 block">¿Tienes un proyecto en mente?</span>
+      
+      <h2 class="font-syne text-5xl md:text-7xl font-extrabold uppercase italic tracking-tighter mb-10">
+        TRABAJEMOS <br/> <span class="text-gradient">JUNTOS</span>
+      </h2>
+
+      <div class="flex flex-col items-center gap-8">
+        <a href="mailto:tuemail@ejemplo.com" class="group relative px-12 py-6 bg-white text-black rounded-full font-syne text-xl font-black uppercase transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-white/5">
+          Hablemos ahora
+          <div class="absolute inset-0 rounded-full bg-white blur-md opacity-0 group-hover:opacity-40 transition-opacity"></div>
+        </a>
+
+        <div class="flex gap-10 mt-8">
+          <a href="https://www.linkedin.com/in/bryan-antonio-reyes-toncel-5195783a3/" target="_blank" class="text-gray-500 hover:text-white font-bold tracking-[0.2em] text-[11px] uppercase transition-colors">LinkedIn</a>
+          <a href="https://github.com/bryanreyesat-dotcom" target="_blank" class="text-gray-500 hover:text-white font-bold tracking-[0.2em] text-[11px] uppercase transition-colors">GitHub</a>
+          <a href="https://www.instagram.com/bryan_reyes1015?igsh=N3ZucXhoNGFkMGVu" class="text-gray-500 hover:text-white font-bold tracking-[0.2em] text-[11px] uppercase transition-colors">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .text-gradient {
+    background: linear-gradient(to right, #ffffff, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>

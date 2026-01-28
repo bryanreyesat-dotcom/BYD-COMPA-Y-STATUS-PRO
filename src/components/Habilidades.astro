@@ -1,0 +1,36 @@
+---
+// src/components/Habilidades.astro
+const skills = [
+  { name: "Astro", color: "hover:text-orange-500" },
+  { name: "React", color: "hover:text-blue-400" },
+  { name: "Tailwind", color: "hover:text-cyan-400" },
+  { name: "Node.js", color: "hover:text-green-500" },
+  { name: "Python", color: "hover:text-yellow-400" },
+  { name: "SQL Server", color: "hover:text-red-500" },
+  { name: "Git", color: "hover:text-orange-600" },
+  { name: "Docker", color: "hover:text-blue-500" },
+];
+---
+
+<section id="habilidades" class="px-6 py-24 max-w-7xl mx-auto">
+  <div class="flex flex-col items-center mb-16 text-center">
+    <span class="text-purple-500 font-bold tracking-[0.3em] text-[10px] uppercase mb-4">Tech Stack</span>
+    <h2 class="font-syne text-5xl font-extrabold uppercase italic tracking-tighter">Habilidades</h2>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    {skills.map(skill => (
+      <div class={`group relative bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl overflow-hidden transition-all duration-500 hover:border-white/20 flex flex-col items-center justify-center gap-4`}>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white/[0.02] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+        
+        <span class={`font-syne text-xl font-bold uppercase tracking-widest transition-all duration-300 ${skill.color}`}>
+          {skill.name}
+        </span>
+
+        <div class="w-12 h-[2px] bg-white/10 relative overflow-hidden">
+          <div class="absolute inset-0 bg-purple-500 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-700"></div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,21 @@
+---
+// src/components/Footer.astro
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="mt-20 py-10 px-6 border-t border-white/5 bg-[#050505]">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    
+    <div class="flex flex-col items-center md:items-start leading-none">
+      <span class="font-syne text-lg font-extrabold tracking-tighter uppercase text-white">BYD</span>
+      <span class="font-syne text-[9px] font-bold tracking-[0.4em] uppercase text-purple-500">COMPAÑY</span>
+    </div>
+
+    <div class="text-center md:text-right">
+      <p class="text-gray-500 text-[11px] font-medium tracking-widest uppercase mb-1">
+        © {currentYear} BYD COMPAÑY — Todos los derechos reservados
+      </p>
+    </div>
+
+  </div>
+</footer>
